@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xin.qiyue">
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.xin.qiyue.QiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="t6nxEyfy6OHP8CWTdrM7UkjWQG3clfB0" />
+
+        <activity
+            android:name=".apple.xhs.WelcomeActivity"
+            android:theme="@style/Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".apple.xhs.MainActivity"
+            android:theme="@style/XHSstatusbar"></activity>
+        <activity
+            android:name=".apple.xhs.LoginActivity"
+            android:theme="@style/Welcome"></activity>
+        <activity
+            android:name=".apple.xhs.LoginOrLogonActivity"
+            android:theme="@style/Welcome"></activity>
+        <activity
+            android:name=".apple.xhs.LogonActivity"
+            android:theme="@style/Welcome"></activity>
+        <activity
+            android:name=".apple.xhs.ForgetPwdActivity"
+            android:theme="@style/Welcome"></activity>
+        <activity
+            android:name=".fragment.mine.MineUserInfoSetting"
+            android:theme="@style/XHSstatusbar"></activity>
+        <activity
+            android:name=".fragment.mine.MineSettingName"
+            android:theme="@style/XHSstatusbar"></activity>
+        <activity
+            android:name=".fragment.mine.MineSettingID"
+            android:theme="@style/XHSstatusbar"></activity>
+        <activity
+            android:name=".fragment.mine.MineSettingArea"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.MineSettingSign"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.MineSettingMombaby"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.MineShowGuanzhu"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.home.OpenCameraActivity"
+            android:theme="@style/Welcome" />
+        <activity
+            android:name=".fragment.search.SearchAdd"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".apple.xhs.note.NoteEditView"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".apple.xhs.shopping.ProductScanActivity"
+            android:theme="@style/XHSstatusbar"></activity>
+        <activity
+            android:name=".apple.xhs.note.NoteScanActivity"
+            android:theme="@style/CollapingTheme"></activity>
+        <activity
+            android:name=".apple.xhs.note.SelfNoteScan"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".apple.xhs.note.NoteEditShowBigPicActivity"
+            android:theme="@style/Welcome" />
+        <activity
+            android:name=".apple.xhs.note.NoteAllPinglunActivity"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".apple.xhs.ServiceHelpActivity"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".apple.xhs.searchwhole.SearchMainActivity"
+            android:theme="@style/SearchMain" />
+        <activity
+            android:name=".apple.xhs.searchwhole.SearchWholeItem"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.ChangePassword"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.AboutUs"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.BindYourAcount"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.PrivateSetting"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.NewMessage"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name=".fragment.mine.BackAdvise"
+            android:theme="@style/XHSstatusbar" />
+        <activity
+            android:name="com.xin.qiyue.ImgSelActivity"
+            android:theme="@style/XHSstatusbar" />
+
+        <meta-data
+            android:name="APP_ID"
+            android:value="${applicationId}" />
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+    </application>
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:background="@color/xhsColor"
+        android:gravity="center">
+        <include layout="@layout/main_toolbar_search_merge"/>
+        <ImageView
+            android:id="@+id/search_add_friend"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:src="@mipmap/search_addfriend"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/search_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+            </android.support.v4.view.ViewPager>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/backgroundcolor"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/search_hot_chat"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
